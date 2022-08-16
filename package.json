@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node app.js",
+    "ac": "autocannon -c 100 -d 5 -p 10 http://localhost:3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/IanChiu628/loop-performance-in-large-requests#readme",
   "dependencies": {
+    "autocannon": "7.9.0",
     "koa": "2.13.4",
     "koa-router": "12.0.0"
   }
